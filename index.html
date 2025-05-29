@@ -3,6 +3,13 @@
     <head>
         <title>Plantfuel</title>
         <style>
+
+            p {
+                row-gap: 0;
+                column-gap: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
             .background-cta {
                 width: 100%;
                 height: 800px;
@@ -20,6 +27,7 @@
                 width: 40%;
                 height: 300px;
                 display: inline-block;
+                margin-left: 60px;
         
                 
                 
@@ -39,10 +47,73 @@
                 color: white;
                 width: 40%;
                 font-size: 20px;
+                margin-left: 60px;
 
 
             }
             
+            .background-1 {
+                background-color: rgb(249,222,220);
+                width: 100%;
+                height: 700px;
+            }
+
+            .background-2 {
+                background-color: rgb(207, 247, 211);
+                width: 100%;
+                height: 700px;
+            }
+
+            .join1-button {
+                background-color: #c89d5b;
+                color: black;
+                font-size: 16px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                display: inline-block;
+                border: 1px solid white;
+                transition: 0.15s;
+                margin-left: 60px;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+
+            .join1-button:hover {
+                background-color: #987456;
+            }
+
+            .join1-button:active {
+                opacity: 0.8;
+            }
+
+            .learnmore-button{
+                background-color: transparent;
+                color: white;
+                font-size: 16px;
+                border: 1px solid white;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                transition: 0.15s;
+                margin-left: 10px;
+                margin-top: 20px;
+                display: inline-block;
+
+            }
+
+            .learnmore-button:hover {
+                background-color: black;
+                color: white;
+            }
+
+            .learnmore-button:active {
+                background-color: gray;
+            }
             
 
 
@@ -69,26 +140,45 @@
                     Discover the delicious way to elevate your workouts with our high-protein, plant-based snacks. Join us in making a sustainable choice for your health and the planet.
                 </p>
             </div>
-            
-    
-            <h2>
-                About Us
-            </h2>
-        <div>
-            <div>
-                
+            <div class="buttons">
+                <div class="join1-button">
+                    <button>Join Early Access</button>
+                </div>
+                <div class="learnmore-button">
+                    <button>Learn More</button>
+                </div>
             </div>
-            <div></div>
             
-            <p>
-                High in protein, perfect for active lifestyles.
-            </p>
-            <p>
-                No additives, just pure, wholesome nutrition.
-            </p>
         </div>
 
-        <div>
+        <div class="background-1">
+            <div class="header">
+                <h2>
+                    About Us
+                </h2>
+            </div>
+            
+            <div class="product-info">
+                <div>
+                    <p>
+                        High in protein, perfect for active lifestyles.
+                    </p>
+                </div>
+                <div>
+                     <p>
+                        No additives, just pure, wholesome nutrition.
+                     </p>
+                 </div>
+                
+                
+            </div>
+
+           
+            
+           
+        </div>
+
+        <div class="background-2">
             <h2>
                 Ingredient transparency
             </h2>
@@ -98,7 +188,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="background-2">
             <h2>
                 Product Benefits
             </h2>
@@ -125,10 +215,13 @@
             </p>
         </div>
 
-        <div>
-            <h2>
-                Customer Testimonials
-            </h2>        
+        <div class="background-1">
+            <div>
+                <h2>
+                    Customer Testimonials
+                </h2>
+            </div>
+                   
             <p>
                 These snacks have transformed my workout routine!
             </p>
@@ -143,7 +236,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="background-1">
             <p>
                 "As a trainer, I push my clients to perform at their best—but I need fuel that supports my lifestyle beyond the gym. Whether I’m coaching, running errands, or just getting through a busy day, PlanetFuel keeps me energized and feeling strong. 
                 Packed with clean, plant-based protein, it’s my go-to snack for sustained energy—no crash, no compromise. It’s more than workout fuel—it’s everyday nutrition that helps me perform at my best, inside and outside the gym."
