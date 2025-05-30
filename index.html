@@ -1,481 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="newport" content width="device-width, initial-scale=1">
         <title>Plantfuel</title>
-        <style>
-
-            p {
-                row-gap: 0;
-                column-gap: 0;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-
-            button {
-                all: unset;
-                display: inline-block;
-            }
-            .background-cta {
-                width: 100%;
-                height: 800px;
-                background-image: url(assets/bars.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-
-            }
-
-            .cta-header {
-                color: white;
-                padding-top: 150px;
-                font-size: 30px;
-                width: 40%;
-                height: 300px;
-                display: inline-block;
-                margin-left: 60px;
-        
-                
-                
-            }
-
-            .background-cta2 {
-                width: 100%;
-                height: 700px;
-                background-image: url(assets/nuts.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-
-            }
-
-            .cta-section {
-                color: white;
-                width: 40%;
-                font-size: 20px;
-                margin-left: 60px;
-
-
-            }
-
-            .cta-buttons {
-                display: flex;
-                gap: 15px;
-                margin-left: 60px;
-            }
-            
-            .background-1 {
-                background-color: rgb(249,222,220);
-                width: 100%;
-                height: 700px;
-            }
-
-            .background-2 {
-                background-color: rgb(207, 247, 211);
-                width: 100%;
-                height: 700px;
-            }
-
-            .join1-button {
-                background-color: #c89d5b;
-                color: black;
-                font-size: 16px;
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                cursor: pointer;
-                display: inline-block;
-                border: 1px solid white;
-                transition: 0.15s;
-                margin-top: 20px;
-               
-            }
-
-            .join1-button:hover {
-                background-color: #987456;
-            }
-
-            .join1-button:active {
-                opacity: 0.8;
-            }
-
-            .learnmore-button{
-                background-color: transparent;
-                color: white;
-                font-size: 16px;
-                border: 1px solid white;
-                padding-left: 25px;
-                padding-right: 25px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                cursor: pointer;
-                transition: 0.15s;
-                margin-left: 10px;
-                margin-top: 20px;
-                display: inline-block;
-
-            }
-
-            .learnmore-button:hover {
-                background-color: black;
-                color: white;
-            }
-
-            .learnmore-button:active {
-                background-color: gray;
-            }
-
-            .join3-button {
-                background-color: #c89d5b;
-                color: white;
-                font-size: 16px;
-                padding-left: 25px;
-                padding-right: 25px;
-                padding-top:15px;
-                padding-bottom: 15px;
-                cursor: pointer;
-                display: inline-block;
-                transition: 0.15s;
-                margin-top: 20px;
-            }
-
-            .join3-button:hover {
-                background-color: #987456;
-            }
-
-            .join3-button:active {
-                opacity: 0.8;
-            }
-
-            .learnmore-button3 {
-                background-color: transparent;
-                color: black;
-                font-size: 16px;
-                border: 1px solid black;
-                padding-left: 25px;
-                padding-right: 25px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                cursor: pointer;
-                transition: 0.15s;
-                margin-left: 10px;
-                margin-top: 20px;
-                display: inline-block;
-
-            }
-
-            .learnmore-button3:hover {
-                background-color: black;
-                color: white;
-            }
-
-            .learnmore-button3:active {
-                background-color: gray;
-            }
-
-
-
-            .about-us{
-                padding: 40px;
-                display: flex;
-                align-items: left;
-                justify-content: center;
-                
-
-            }
-            
-            .about-content {
-               flex: 1;
-               max-width: 600px;
-                margin-top: 150px;
-
-            }     
-
-
-            .about-content h2 {
-                font-size: 50px;
-                margin-bottom: 15px;
-                
-            }
-
-            .about-content p {
-                font-size: 20px;
-                line-height: 1.8;
-                margin-top: 20px;
-                margin-bottom: 10px;
-
-            }
-            
-            .about-picture {
-                flex: 1;
-                display: flex;
-                justify-content: centre;
-            }
-
-            .about-picture img {
-                max-width:100%;
-                height: auto;
-
-
-            }
-
-            .about-buttons {
-                display: flex;
-                gap: 15px;
-                margin-bottom: 25px;
-            }
-
-            .join2-button {
-                background-color: #9b7653 ;
-                color: black;
-                font-size: 16px;
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                cursor: pointer;
-                transition: 0.8s;
-                margin-top: 20px;
-            }
-
-            .join2-button:hover {
-                background-color: #856d4d;
-                
-            }
-
-            .join2-button:active {
-                opacity: 0.8;
-            }
-
-            .learnmore-button2 {
-                background-color: #c19a6b;
-                color: black;
-                font-size: 16px;
-                padding-left: 25px;
-                padding-right: 25px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                cursor: pointer;
-                transition: 0.15s;
-                margin-top: 20px;
-                display: inline-block;
-
-            }
-
-            .learnmore-button2:hover {
-                background-color: black;
-                color: white;
-            }
-
-            .learnmore-button2:active {
-                background-color: gray;
-            }
-
-
-            .faq-container {
-                max-width: 800px;
-                margin: 50px auto;
-                padding: 20px;
-                background-color: white;
-                box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            }
-
-            .faq-item {
-                margin-bottom: 10px;
-            }
-            
-            .faq-header h2 {
-                font-size: 60px;
-                margin-left: 550px;
-               
-            }
-
-            .faq-header p {
-                font-size: 20px;
-                margin-left: 350px;
-                margin-bottom: 50px;
-
-            }
-
-            .faq-question {
-                width: 100%;
-                background-color: #444;
-                color: white;
-                font-size: 18px;
-                border: none;
-                padding: 10px;
-                text-align: left;
-                cursor: pointer;
-            }
-
-            .faq-answer {
-                display: none;
-                padding: 10px;
-                background-color: #ddd;
-                margin-top: 5px;
-            }
-
-            .faq-footer h2{
-                font-size: 30px;
-                margin-top: 50px;
-                margin-left: 500px;
-            }
-
-            .faq-footer p {
-                font-size: 20px;
-                margin-left: 530px;
-                
-            }
-
-            .contact-button {
-                background-color: white;
-                color: black;
-                font-size: 16px;
-                border: none;
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                cursor: pointer;
-                border: 1px solid black;
-                margin-left: 575px;
-                margin-top: 50px;
-            } 
-        
-            .contact-button:active {
-                opacity: 0.8;
-            }
-
-            .contact-button:hover {
-                background-color: black;
-                color: white;          
-            }
-            
-
-
-           .product-benefits {
-            display: flex;
-            align-items: left;
-            justify-content: center;
-            padding: 40px;
-           }
-
-           .benefits-content {
-            flex: 1;
-            max-width: 600px;
-            padding: 20px;
-           }
-
-           .headingbenefits-content {
-            margin-bottom: 15px;
-           }
-
-           .headingbenefits-content h2 {
-            font-size: 40px;
-            font-weight: bold;
-           }
-           .headingbenefits-content h3{
-            font-size: 20px;
-            font-weight: normal;
-           }
-
-           .mainbenefits-content {
-            font-size: 16px;
-            margin-bottom:10px;
-            line-height: 1.8;
-           }
-
-           .benefits-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-           }
-
-           .benefits-image img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .ingredient-section {
-
-                width: 100%
-                padding:30px;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-
-            }
-
-            .ingredient-header {
-                font-size: 30px;
-                font-weight: bold;
-                margin-bottom: 15px;
-                
-                margin-right: 40px;
-            }
-
-            .ingredient-text {
-                font-size: 18px;
-                line-height: 1.4;
-                text-align: justify;
-                display: inline-block;
-                margin-left: 40px;             
-             
-            }
-            
-            .footer-section2 {
-                background-color: white;
-                padding: 20px;
-                text-align: center;
-            }
-
-            .column {
-                display: inline-block;
-                vertical-align: top;
-                margin: 0 20px;
-            }
-
-            .column h3 {
-                margin-bottom: 10px;
-            }
-
-            .column ul {
-                list-style-type: none;
-                padding: 0;
-            }
-            
-            .column ul li{
-                margin: 5px 0;
-            }
-
-            .column ul li a {
-                text-decoration: none
-            }
-
-            .column ul li a:hover {
-                text-decoration: underline;
-            }
-
-            .my-logo{
-                width: 5px;
-                height: 60px;
-                margin-right: 10px;
-                vertical-align: center;
-                display: inline-block;
-            }
-                
-            
-
-                
-    </style>
-
-    
+        <link rel="stylesheet" href="styles/styles.css">    
     </head>
-    <body>
-
-        
+    <body>     
 
 
         <div class="background-cta">
@@ -540,22 +71,24 @@
         </div>
 
         <div class="background-2">
-            <div class="ingredient-section">
-                <div class="ingredient-header">
-                    <h2>
-                        Ingredient transparency
-                    </h2>
-                </div>
-                <div class="ingredient-text">
-                    <p>            
-                        At PlanetFuel, we believe in fueling your body with clean, plant-based nutrition you can trust. That’s why our snacks are crafted with protein-rich lentils and quinoa—no additives, no preservatives, just pure, powerful energy.
-                        We prioritize ingredient transparency so you know exactly what’s going into your body—fuel that helps you perform at your best while making a positive impact on the planet. Every bite is a choice for better health and sustainability.
-                    </p>
+            <section class="ingredients-transparency">
+                <div class="ingredient-section">
+                    <div class="ingredient-header">
+                        <h2>
+                            Ingredient transparency
+                        </h2>
+                    </div>
+                    <div class="ingredient-text">
+                        <p>            
+                            At PlanetFuel, we believe in fueling your body with clean, plant-based nutrition you can trust. That’s why our snacks are crafted with protein-rich lentils and quinoa—no additives, no preservatives, just pure, powerful energy.
+                            We prioritize ingredient transparency so you know exactly what’s going into your body—fuel that helps you perform at your best while making a positive impact on the planet. Every bite is a choice for better health and sustainability.
+                        </p>
+                    </div>
                 </div>
                 
-                
-            </div>         
-              
+                    
+                       
+            </section>
            
         </div>
 
@@ -600,34 +133,7 @@
            
         </div>
 
-        <div class="background-1">
-            <div>
-                <h2>
-                    Customer Testimonials
-                </h2>
-            </div>
-                   
-            <p>
-                These snacks have transformed my workout routine!
-            </p>
-            <p>
-                PlantFuel snacks give me the energy I need!”
-            </p>
-            <p>
-                “I love the taste and the clean ingredients!”
-            </p>
-            <p>
-                “Finally, a snack that fuels my workouts!”
-            </p>
-        </div>
-
-        <div class="background-1">
-            <p>
-                "As a trainer, I push my clients to perform at their best—but I need fuel that supports my lifestyle beyond the gym. Whether I’m coaching, running errands, or just getting through a busy day, PlanetFuel keeps me energized and feeling strong. 
-                Packed with clean, plant-based protein, it’s my go-to snack for sustained energy—no crash, no compromise. It’s more than workout fuel—it’s everyday nutrition that helps me perform at my best, inside and outside the gym."
-            </p>
-        </div>
-
+   
         <div class="background-cta2">
             <div class="cta-header">
                 <h1>
@@ -709,7 +215,7 @@
                             You can purchase our snacks directly from our website. We offer early access for subscribers to enjoy exclusive deals. Stay tuned for our launch!
                         </div>
                 </div>
-                <script src="scripts/main.js"></script>
+                
             </div>
     
             <div class="faq-footer">
@@ -794,10 +300,10 @@
                     </ul>
                 </div>
             </div>
-        </div>
-           
+        </div>         
         
         
        
     </body>
+    <script src="scripts/main.js"></script>
 </html>
