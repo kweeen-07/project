@@ -10,6 +10,11 @@
                 margin-top: 0;
                 margin-bottom: 0;
             }
+
+            button {
+                all: unset;
+                display: inline-block;
+            }
             .background-cta {
                 width: 100%;
                 height: 800px;
@@ -33,7 +38,7 @@
                 
             }
 
-             .background-cta2 {
+            .background-cta2 {
                 width: 100%;
                 height: 700px;
                 background-image: url(assets/nuts.jpg);
@@ -50,6 +55,12 @@
                 margin-left: 60px;
 
 
+            }
+
+            .cta-buttons {
+                display: flex;
+                gap: 15px;
+                margin-left: 60px;
             }
             
             .background-1 {
@@ -76,9 +87,8 @@
                 display: inline-block;
                 border: 1px solid white;
                 transition: 0.15s;
-                margin-left: 60px;
                 margin-top: 20px;
-                font-weight: bold;
+               
             }
 
             .join1-button:hover {
@@ -114,10 +124,141 @@
             .learnmore-button:active {
                 background-color: gray;
             }
+
+            .about-us{
+                padding: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
             
+            .about-content {
+               flex: 1;
+               max-width: 500px;
+            }     
 
 
+            .about-content h2 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
 
+            .about-content p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            
+            .about-picture {
+                flex: 1;
+                display: flex;
+                justify-content: centre;
+            }
+
+            .about-picture img {
+                max-width:100%;
+                height: auto;
+
+
+            }
+
+            .about-buttons {
+              display: inline-block;
+            }
+
+            .faq-container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+
+            .faq-item {
+                margin-bottom: 10px;
+            }
+
+            .faq-question {
+                width: 100%;
+                background-color: #444;
+                color: white;
+                font-size: 18px;
+                border: none;
+                padding: 10px;
+                text-align: left;
+                cursor: pointer;
+            }
+
+            .faq-answer {
+                display: none;
+                padding: 10px;
+                background-color: #ddd;
+                margin-top: 5px;
+            }
+
+           .product-benefits {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+           }
+
+           .benefits-content {
+            flex: 1;
+            max-width: 500px;
+            padding: 20px;
+           }
+
+           .headingbenefits-content {
+            margin-bottom: 15px;
+           }
+
+           .mainbenefits-content {
+            font-size: 13px;
+            margin-bottom:10px;
+           }
+
+           .benefits-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+           }
+
+           .benefits-image img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .ingredient-section {
+
+                width: 100%
+                padding:30px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+
+            .ingredient-header {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 15px;
+                
+                margin-right: 40px;
+            }
+
+            .ingredient-text {
+                font-size: 18px;
+                line-height: 1.4;
+                text-align: justify;
+                display: inline-block;
+                margin-left: 40px;             
+             
+            }
+            
+            
 
 
 
@@ -129,6 +270,10 @@
     
     </head>
     <body>
+
+        
+
+
         <div class="background-cta">
             <div class="cta-header">
                 <h1>
@@ -140,7 +285,7 @@
                     Discover the delicious way to elevate your workouts with our high-protein, plant-based snacks. Join us in making a sustainable choice for your health and the planet.
                 </p>
             </div>
-            <div class="buttons">
+            <div class="cta-buttons">
                 <div class="join1-button">
                     <button>Join Early Access</button>
                 </div>
@@ -152,67 +297,99 @@
         </div>
 
         <div class="background-1">
-            <div class="header">
-                <h2>
-                    About Us
-                </h2>
-            </div>
-            
-            <div class="product-info">
-                <div>
+            <section class="about-us">
+                <div class="about-content">
+                    <h2>
+                        About Us
+                    </h2>
                     <p>
                         High in protein, perfect for active lifestyles.
-                    </p>
-                </div>
-                <div>
-                     <p>
                         No additives, just pure, wholesome nutrition.
-                     </p>
-                 </div>
-                
-                
-            </div>
+                    </p>
+                </div>           
+               
+                    <div class="about-buttons">
+                    <div class="join2-button">
+                        <button>
+                            Join
+                        </button>
+                    </div>
+                    <div class="learnmore-button2">
+                        <button>
+                             Learn More
+                        </button>
+                    </div>
+                    </div>
+            
+                    <div class="about-picture">
+                        <img class="about-picture" src="assets/eating bars.png">
+                    </div>
+                </div>
 
-           
+            </section>      
             
            
         </div>
 
         <div class="background-2">
-            <h2>
-                Ingredient transparency
-            </h2>
-            <p>            
-                At PlanetFuel, we believe in fueling your body with clean, plant-based nutrition you can trust. That’s why our snacks are crafted with protein-rich lentils and quinoa—no additives, no preservatives, just pure, powerful energy.
-                We prioritize ingredient transparency so you know exactly what’s going into your body—fuel that helps you perform at your best while making a positive impact on the planet. Every bite is a choice for better health and sustainability.
-            </p>
+            <div class="ingredient-section">
+                <div class="ingredient-header">
+                    <h2>
+                        Ingredient transparency
+                    </h2>
+                </div>
+                <div class="ingredient-text">
+                    <p>            
+                        At PlanetFuel, we believe in fueling your body with clean, plant-based nutrition you can trust. That’s why our snacks are crafted with protein-rich lentils and quinoa—no additives, no preservatives, just pure, powerful energy.
+                        We prioritize ingredient transparency so you know exactly what’s going into your body—fuel that helps you perform at your best while making a positive impact on the planet. Every bite is a choice for better health and sustainability.
+                    </p>
+                </div>
+                
+                
+            </div>         
+              
+           
         </div>
 
         <div class="background-2">
-            <h2>
-                Product Benefits
-            </h2>
-            <h3>
-                Here’s why Plantfuel is one of the most preferred plant-based snacks by athletes and gym-goers:
-            </h3>
-            <p>
-                ✔ High-Protein Fuel – Supports muscle recovery and sustained energy for active lifestyles.
-            </p>
-            <p>
-                ✔ Clean Ingredients – No additives, preservatives, or artificial fillers—just pure plant-based nutrition. 
-            </p>
-            <p>
-                ✔ Balanced Energy – No crashes, just long-lasting performance for workouts and daily life.   
-            </p>
-            <p>
-                ✔ Eco-Friendly & Sustainable – Made with responsibly sourced ingredients for a healthier planet.
-            </p>
-            <p>
-                ✔ Perfect for Anytime – Whether before a workout, mid-day, or post-training, it fits into any routine. 
-            </p>
-            <p>
-                ✔ Gluten-Free & Vegan – Supports diverse dietary needs without compromising on taste or nutrition.
-            </p>
+            <section class="product-benefits">            
+                <div class="benefits-content">
+                    <div class="headingbenefits-content">>
+                        <h2>
+                            Product Benefits
+                        </h2>
+                        <h3>
+                            Here’s why Plantfuel is one of the most preferred plant-based snacks by athletes and gym-goers:
+                        </h3>
+                    </div>
+                    <div class="mainbenefits-content">
+                        <p>
+                            ✔ High-Protein Fuel – Supports muscle recovery and sustained energy for active lifestyles.
+                        </p>
+                        <p>
+                            ✔ Clean Ingredients – No additives, preservatives, or artificial fillers—just pure plant-based nutrition. 
+                        </p>
+                        <p>
+                            ✔ Balanced Energy – No crashes, just long-lasting performance for workouts and daily life.   
+                        </p>
+                        <p>
+                            ✔ Eco-Friendly & Sustainable – Made with responsibly sourced ingredients for a healthier planet.
+                        </p>
+                        <p>
+                            ✔ Perfect for Anytime – Whether before a workout, mid-day, or post-training, it fits into any routine. 
+                        </p>
+                        <p>
+                            ✔ Gluten-Free & Vegan – Supports diverse dietary needs without compromising on taste or nutrition.
+                        </p>
+                    </div>
+                </div>
+                <div class="benefits-image">
+                    <img src="assets/lentils.jpg">
+                </div>
+           
+            </section>         
+            
+           
         </div>
 
         <div class="background-1">
@@ -261,45 +438,57 @@
             
         
 
-        <div> 
-
-            <h2>
-                FAQ
-            </h2>
-            <p>
-                Find answers to your questions about our products and brand below.
-            </p>
-            <h3>
-                What are the ingredients?
-            </h3>
-            <p>
-                Our snacks are crafted from wholesome ingredients like lentils and quinoa. We prioritize natural flavorings and avoid additives or preservatives. 
-                This ensures a clean, nutritious snack for your active lifestyle.
-            </p>
-            <h3>
-                Are they gluten-free?
-            </h3>
-            <p>
-                Yes, all our snacks are gluten-free. We use only gluten-free grains and ingredients. You can enjoy them worry-free!
-            </p>
-            <h3>
-                How do I store?
-            </h3>
-            <p>
-                To maintain freshness, store our snacks in a cool, dry place. Once opened, reseal the packaging tightly. Enjoy them within a few weeks for the best taste.
-            </p>
-            <h3>
-                Are they vegan?
-            </h3>
-            <p>
-                Absolutely! Our snacks are 100% plant-based and suitable for vegans. We believe in providing delicious options that align with a vegan lifestyle.
-            </p>
-            <h3>
-                Where can I buy?
-            </h3>
-            <p>
-                You can purchase our snacks directly from our website. We offer early access for subscribers to enjoy exclusive deals. Stay tuned for our launch!
-            </p>
+        <div class="faq-section">
+            <div class="faq-header">
+                 <h2>
+                    FAQ
+                </h2>            
+                <p>
+                    Find answers to your questions about our products and brand below.
+                </p>
+            
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What are the ingredients?
+                    </button>
+                    <div class="faq-answer">
+                        Our snacks are crafted from wholesome ingredients like lentils and quinoa. We prioritize natural flavorings and avoid additives or preservatives. 
+                        This ensures a clean, nutritious snack for your active lifestyle.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are they gluten-free?
+                    </button>
+                    <div class="faq-answer">
+                        Yes, all our snacks are gluten-free. We use only gluten-free grains and ingredients. You can enjoy them worry-free!
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I store?
+                    </button>
+                    <div class="faq-answer">
+                        To maintain freshness, store our snacks in a cool, dry place. Once opened, reseal the packaging tightly. Enjoy them within a few weeks for the best taste.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are they vegan?
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely! Our snacks are 100% plant-based and suitable for vegans. We believe in providing delicious options that align with a vegan lifestyle.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Where can I buy?
+                    </button>
+                    <div class="faq-answer">
+                        You can purchase our snacks directly from our website. We offer early access for subscribers to enjoy exclusive deals. Stay tuned for our launch!
+                    </div>
+                </div>
+            </div>
             <h2>
                 Still have questions?
             </h2>
@@ -308,6 +497,7 @@
             </p>
 
         </div>
+        <script src="scripts/main.js"></script>
         
         
         
