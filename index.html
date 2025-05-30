@@ -283,6 +283,19 @@
             .faq-item {
                 margin-bottom: 10px;
             }
+            
+            .faq-header h2 {
+                font-size: 60px;
+                margin-left: 550px;
+               
+            }
+
+            .faq-header p {
+                font-size: 20px;
+                margin-left: 350px;
+                margin-bottom: 50px;
+
+            }
 
             .faq-question {
                 width: 100%;
@@ -302,6 +315,44 @@
                 margin-top: 5px;
             }
 
+            .faq-footer h2{
+                font-size: 30px;
+                margin-top: 50px;
+                margin-left: 500px;
+            }
+
+            .faq-footer p {
+                font-size: 20px;
+                margin-left: 530px;
+                
+            }
+
+            .contact-button {
+                background-color: white;
+                color: black;
+                font-size: 16px;
+                border: none;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                border: 1px solid black;
+                margin-left: 575px;
+                margin-top: 50px;
+            } 
+        
+            .contact-button:active {
+                opacity: 0.8;
+            }
+
+            .contact-button:hover {
+                background-color: black;
+                color: white;          
+            }
+            
+
+
            .product-benefits {
             display: flex;
             align-items: left;
@@ -319,9 +370,19 @@
             margin-bottom: 15px;
            }
 
+           .headingbenefits-content h2 {
+            font-size: 40px;
+            font-weight: bold;
+           }
+           .headingbenefits-content h3{
+            font-size: 20px;
+            font-weight: normal;
+           }
+
            .mainbenefits-content {
-            font-size: 13px;
+            font-size: 16px;
             margin-bottom:10px;
+            line-height: 1.8;
            }
 
            .benefits-image {
@@ -468,7 +529,7 @@
                         <h2>
                             Product Benefits
                         </h2>
-                        <h3>
+                        <h3 class="hb2-content">
                             Here’s why Plantfuel is one of the most preferred plant-based snacks by athletes and gym-goers:
                         </h3>
                     </div>
@@ -562,13 +623,14 @@
 
         <div class="faq-section">
             <div class="faq-header">
-                 <h2>
+                <h2>
                     FAQ
                 </h2>            
                 <p>
                     Find answers to your questions about our products and brand below.
                 </p>
-            
+            </div>
+            <div class="faq-body">
                 <div class="faq-item">
                     <button class="faq-question">
                         What are the ingredients?
@@ -579,47 +641,53 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Are they gluten-free?
-                    </button>
-                    <div class="faq-answer">
-                        Yes, all our snacks are gluten-free. We use only gluten-free grains and ingredients. You can enjoy them worry-free!
-                    </div>
+                        <button class="faq-question">
+                            Are they gluten-free?
+                        </button>
+                        <div class="faq-answer">
+                            Yes, all our snacks are gluten-free. We use only gluten-free grains and ingredients. You can enjoy them worry-free!
+                        </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
-                        How do I store?
-                    </button>
-                    <div class="faq-answer">
-                        To maintain freshness, store our snacks in a cool, dry place. Once opened, reseal the packaging tightly. Enjoy them within a few weeks for the best taste.
-                    </div>
+                        <button class="faq-question">
+                            How do I store?
+                        </button>
+                        <div class="faq-answer">
+                            To maintain freshness, store our snacks in a cool, dry place. Once opened, reseal the packaging tightly. Enjoy them within a few weeks for the best taste.
+                        </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Are they vegan?
-                    </button>
-                    <div class="faq-answer">
-                        Absolutely! Our snacks are 100% plant-based and suitable for vegans. We believe in providing delicious options that align with a vegan lifestyle.
-                    </div>
+                        <button class="faq-question">
+                            Are they vegan?
+                        </button>
+                        <div class="faq-answer">
+                            Absolutely! Our snacks are 100% plant-based and suitable for vegans. We believe in providing delicious options that align with a vegan lifestyle.
+                        </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Where can I buy?
-                    </button>
-                    <div class="faq-answer">
-                        You can purchase our snacks directly from our website. We offer early access for subscribers to enjoy exclusive deals. Stay tuned for our launch!
-                    </div>
+                        <button class="faq-question">
+                            Where can I buy?
+                        </button>
+                        <div class="faq-answer">
+                            You can purchase our snacks directly from our website. We offer early access for subscribers to enjoy exclusive deals. Stay tuned for our launch!
+                        </div>
                 </div>
+                <script src="scripts/main.js"></script>
             </div>
-            <h2>
-                Still have questions?
-            </h2>
-            <p>
-                We're here to help you!
-            </p>
-
+            <div class="faq-footer">
+                <h2>
+                    Still have questions?
+                </h2>
+                <p>
+                    We're here to help you!
+                </p>
+                <button class="contact-button">
+                    Contact
+                </button>
+            </div>
+        
         </div>
-        <script src="scripts/main.js"></script>
+        
         
         
         
